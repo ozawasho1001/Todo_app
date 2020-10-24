@@ -1,0 +1,18 @@
+<div>
+  <h1 class="title">Let's Post.</h1>
+  <p class="sub">write what to do.</p>
+ 
+  <%= form_with model:  @todo do |f| %>
+    <%= f.label :time , class: 'text-post' %>
+    <%= f.date_field :time , class: 'input' %>
+    <%= f.label :place , class: 'text-post'%>
+    <%= f.text_field :place , class: 'input' %>
+    <%= f.label :todo , class: 'text-post' %>
+    <%= f.text_field :todo , class: 'input'%>
+    <%= f.label :memo , class: 'text-post'%>
+    <%= f.text_field :memo , class: 'input' %>
+    <div class="button">
+      <%= f.submit 'Post' %>
+    </div>
+  <% end %>
+</div>

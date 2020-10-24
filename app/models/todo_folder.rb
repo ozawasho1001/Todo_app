@@ -1,0 +1,2 @@
+class TodoFolder < ApplicationRecord
+end

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo　List</title>
+</head>
+  <body>
+    <div>
+      <h1 class="text-title">Sign Up.</h1> 
+      <%= form_with model: @user do |f| %>
+      <div class="form-group">
+      <%= f.label :name , class: 'text-white' %>
+      <%= f.text_field :name , class: 'form-control' %>
+      <%= f.label :email , class: 'text-white' %> 
+      <%= f.email_field :email , class: 'form-control' %>
+      </div>
+      <%= f.submit 'Register', class: 'text' %>
+      <% end %>
+    </div>
+  </body>
+</html>

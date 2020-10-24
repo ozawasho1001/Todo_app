@@ -1,0 +1,100 @@
+//Todo User登録画面
+//見出し
+.text-title {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  margin: 80px;
+  font-weight: 700;
+  color: black;
+  font-size: 40px;
+  }
+
+
+//name　と　email　のラベル
+.text-white {
+  margin: 20px 25% ;
+}
+
+// フォーム
+.form-control {
+  width: 50%;
+  margin: 0px 25%;
+}
+
+//submit　ボタン
+.text {
+  margin: 0px 70%;
+  padding: 10px;
+}
+
+//投稿画面
+//全体のバックカラー指定。
+body {
+  background-color: silver; }
+
+//投稿ページの見出し
+h1 {
+  text-align: center;
+  margin: 80px;
+  font-weight: 700;
+  color: black;
+  font-size: 40px;
+  font-weight: 900;
+  font-family: 'Bangers', cursive; }
+
+//pタグ
+.sub {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+  font-size: 20px;
+  margin: 0px 0px 5% 0px;
+  }
+
+//ラベルの名前
+.text-post {
+  margin: 5px 20px;
+  text-align: center;
+  font-size: 20px; }
+
+//フォームのサイズと位置
+.input {
+  text-align: center;
+  height: 40px;
+  width: 40%;
+  margin: 0px 0px 15px; }
+
+//投稿ボタン
+.button {
+  text-align: center;
+  padding: 20px;
+  font-size: 25px; }
+  
+// Todo一覧画面 
+//表示を整える
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  align-items: center;
+}
+
+// edit label group
+.edit-name-group {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  font-family: cursive;
+  margin: 0px 10% 0px 0%;
+}
+
+.edit-form {
+  font-size: 15px;
+  margin: 20px;
+  padding: 12px;
+}
+
+.update-button {
+  margin: 3px 0px 1px 5px;
+  padding: 10px;
+  font-family: cursive;
+}

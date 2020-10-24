@@ -1,0 +1,19 @@
+<body>
+  <div>
+    <h1>E D I T</h1>
+    <%= form_with model: @todo, url: todo_path(@todo)  do |f| %>
+    <div class='edit-name-group'>
+      <%= f.label :time, class: 'edit-name'%>
+      <%= f.label :place, class: 'edit-name' %>
+      <%= f.label :todo, class: 'edit-name' %>
+      <%= f.label :memo, class: 'edit-name' %>
+    </div>
+    <%= f.text_field :time, class: 'edit-form' %>
+    <%= f.text_field :place, class: 'edit-form' %>
+    <%= f.text_field :todo, class: 'edit-form' %>
+    <%= f.text_field :memo, class: 'edit-form' %>
+    <%= f.submit "Update", class: 'update-button' %>
+    <% end  %>
+  </div>
+  
+</body>

@@ -1,0 +1,17 @@
+<body>
+  <div>
+    <h1>Todo　List </h1>
+    <% @todos.each do |todo| %>
+    <div class="container">
+     <div class="time"><%= todo.time %></div>
+     <div class="place"><%= todo.place %></div>
+     <div class="todo"><%= todo.todo %></div>
+     <div class="memo"><%= todo.memo %></div>
+     <%= link_to "/todos/#{todo.id}/edit" do %>
+       <button><i>edit</i></button>
+     <% end %>
+     <%= link_to "削除", "todos/#{todo.id}", method: :delete %>
+    </div>
+    <% end  %>
+  </div>
+</body>

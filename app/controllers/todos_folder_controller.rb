@@ -1,0 +1,2 @@
+class TodosFolderController < ApplicationController
+end
